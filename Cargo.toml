@@ -1,0 +1,18 @@
+[package]
+name = "toml2lua"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dervex"]
+repository = "https://github.com/DervexHero/toml2lua"
+description = "Convert TOML to Lua table"
+keywords = ["toml", "lua", "parse", "table", "array"]
+categories = ["parsing"]
+license = "Apache-2.0"
+
+[lib]
+name = "toml2lua"
+path = "src/lib.rs"
+
+[dependencies]
+indexmap = { version = "2.2.2", features = ["serde"] }
+toml = "0.8.9"
